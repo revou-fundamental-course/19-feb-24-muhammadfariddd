@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Css reset -->
+    <link rel="stylesheet" href="../css/reset-css.css" />
+
+    <!-- Css Style -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/portofolio.css" />
+
+    <!-- Font awesome / Icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav>
+      <div class="container">
+        <div class="logo-nav">
+          <a href="https://revou.co/">
+            <img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo-RevoU-5.png" alt="Revou" width="50" />
+          </a>
+        </div>
+
+        <div class="nav-menu">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="our profile.html">Our Profile</a></li>
+            <li><a href="">Portofolio</a></li>
+            <li><a href="../index.html#ms-container">Message Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Protofolio Start  -->
+    <main>
+      <div class="container">
+        <div class="main-judul">
+          <h1>Portofolio Saya</h1>
+          <p>Berikut Sertifikat portofolio yang telah saya capai :</p>
+        </div>
+        <div class="main-isi">
+          <div class="main-isi-portofolio">
+            <img src="img/portofolio/permikomnas.png" width="500" class="img-list" />
+            <img src="img/portofolio/dicoding.png" width="500" class="img-list" />
+
+            <i class="fas fa-arrow-alt-circle-left fa-3x" onclick="return plusSlide(-1);"></i>
+            <i class="fas fa-arrow-alt-circle-right fa-3x" onclick="return plusSlide(+1);"></i>
+          </div>
+          <div class="main-isi-quote">
+            <p>"Sebenarnya otak kita sama aja, yang membedakan hanya siapa yang belajar duluan dan siapa yang belajar terus menerus"</p>
+            <p>~Dea Afrizal</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Protofolio End  -->
+
+    <!-- Footer Start  -->
+    <footer>
+      <div class="container">
+        <div class="footer-sosmed">
+          <a href="https://github.com/muhammadfariddd" target="_blank">
+            <i class="fab fa-github fa-2x" style="color: #080808"></i>
+          </a>
+          <a href="https://linkedin.com/in/muhammad-fariddd" target="_blank">
+            <i class="fab fa-linkedin fa-2x" style="color: #080808"></i>
+          </a>
+          <a href="https://www.instagram.com/farid.sugi" target="_blank">
+            <i class="fab fa-instagram-square fa-2x" style="color: #080808"></i>
+          </a>
+        </div>
+        <div class="footer-program">
+          <p>Software Engineering Fundamental Course Batch 13</p>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; Created By Muhammad Farid | RevoU</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End  -->
+
+    <script src="../js/portofolio.js"></script>
+  </body>
+</html>

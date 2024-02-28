@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0px auto;
+}
+
+
+/* Navbar  */
+nav {
+    height: 60px;
+    position: fixed;
+    border-bottom: 2px solid black;
+    width: 100%;
+    background-color: white;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo-nav {
+    margin-block: 5px;
+}
+
+nav .nav-menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav .nav-menu ul li {
+    margin: 20px 0;
+    list-style-type: none;
+}
+
+.nav-menu ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 1.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.nav-menu ul li a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* Header  */
+header {
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    padding: 60px 0 20px;
+    background-position: 0 80px;
+    color: black;
+}
+
+.title {
+    margin: 10px 0 20px;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+}
+
+
+/* Quarter  */
+#quarter {
+    margin-block: 30px;
+    border-block: 2px double black;
+}
+
+#quarter .hq-title {
+    padding-top: 30px;
+    text-align: center;
+}
+
+#quarter .hq-kota {
+    display: flex;
+    margin: 50px auto 40px;
+    text-align: center;
+}
+
+#quarter .hq-kota .kota {
+    margin-inline: auto;
+}
+
+
+#quarter .hq-kota img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#quarter .hq-kota img:hover {
+    opacity: .7;
+}
+
+
+/* Message Us  */
+#ms-container {
+    padding: 80px 0 80px;
+    border-bottom: 2px solid black;
+}
+
+.ms-title {
+    margin-bottom: 30px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.ms-message {
+    display: flex;
+    width: 100%;
+}
+
+.ms-form {
+    width: 40%;
+    margin-inline: auto;
+}
+
+.ms-form table td {
+    padding: 12px;
+}
+
+.ms-form table input[name="submit"] {
+    width: 100%;
+    background-color: yellow;
+    border-radius: 5px;
+    border: none;
+    padding: 9px;
+}
+
+
+.ms-form table input[name="submit"]:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.ms-data {
+    margin-inline: auto;
+    width: 25%;
+}
+
+.ms-data table td {
+    padding: 12px;
+}
+
+
+/* Footer  */
+footer {
+    height: 60px;
+    line-height: 60px;
+    border-top: 2px solid black;
+    font-size: 13px;
+    font-style: italic;
+    background-color: #fff;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-sosmed {
+    margin-top: 7px;
+}
+
+.footer-sosmed a {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.footer-sosmed a i:hover {
+    font-size: 30px;
+}
+
+footer .footer-program {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+
+
+/* Responsive mobile */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0 2%;
+    }
+
+
+    nav {
+        height: auto;
+        position: relative;
+    }
+
+    nav .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-menu {
+        margin: 0px auto;
+        width: max-content;
+        display: flex;
+
+    }
+
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu ul li {
+        border: 2px solid black;
+        border-radius: 2px;
+        background-color: #fff;
+        color: black;
+        padding: none;
+    }
+
+    .nav-menu ul li a {
+        border: none;
+        font-size: 12px;
+    }
+
+    .nav-menu ul li:hover {
+        color: black;
+        opacity: .8;
+    }
+
+
+    header {
+        padding: 10px 0px 20px;
+        height: 400px;
+        background-position: 0 50px;
+    }
+
+    .title {
+        line-height: 1.5rem;
+        font-size: .8rem;
+    }
+
+    header .title h1, .hq-title h1 {
+        font-size: 18px;
+    }
+
+    header .title h1 {
+        font-size: 12px;
+    }
+
+
+    .hq-kota {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .kota {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .kota img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .ms-form {
+        width: 100%;
+    }
+
+    .ms-form table {
+        width: 100%;
+    }
+
+    .ms-message {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ms-data {
+        margin: 0px auto;
+    }
+
+    footer {
+        height: auto;
+        line-height: 40px;
+        border-top: 2px solid black;
+        font-size: 11px;
+        font-style: italic;
+        background-color: #fff;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .nav-menu ul li a {
+        font-size: 9px;
+    }
+
+    header {
+        background-position: -30px 50px;
+    }
+}

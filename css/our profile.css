@@ -1,0 +1,82 @@
+/* Main */
+main {
+    padding: 50px 0px 120px;
+}
+
+.main-judul {
+    margin: 20px 0px 30px;
+    line-height: 1.8em;
+}
+
+.main-judul h1 {
+    text-align: left;
+}
+
+.main-isi {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-foto {
+    text-align: center;
+}
+
+.main-foto img {
+    width: 200px;
+    background-color: red;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 1px solid #010101;
+}
+
+.main-foto span {
+    font-size: 14px;
+}
+
+.main-about {
+    padding: 30px 10%;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.main-about p {
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+
+/* Footer */
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+/* Responsive Mobile */
+@media only screen and (max-width: 600px) {
+
+    main {
+        padding: 20px 0px 20px;
+        font-size: 12px;
+    }
+
+    .main-judul h1 {
+        font-size: 18px;
+    }
+
+    .main-foto span {
+        font-size: 11px;
+    }
+
+    .main-about {
+        padding: 20px 2%;
+    }
+
+    footer {
+        position: relative;
+    }
+}
